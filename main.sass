@@ -1,0 +1,541 @@
+/*  Variables */ 
+
+$dark-grey: #313332
+$background: rgba(0, 0, 0, 0.3)
+$grey: #c7c7c7
+$grey2: #252726
+$white: white
+$black: black
+$blue: #00C7E8
+$blue2: #41A3FB
+$font1: 'Sansita', sans-serif
+$font2: 'Open Sans', sans-serif
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+/* Global styles */
+
+section > .container 
+	margin: 50px auto
+	text-align: center
+
+* 
+	margin: 0
+	font-family: $font2
+
+.container 
+	max-width: 1200px
+	margin: 0px auto
+
+
+.row:before,
+.row:after 
+	content: " "
+	display: table
+
+.row:after 
+	clear: both
+
+
+/* Nav */
+
+header 
+	background-color: $dark-grey
+	height: 50px
+	
+	nav img 
+		padding: 10px 0
+		float: left
+	ul
+		list-style-type: none
+		float: right
+		padding: 0
+		li
+			display: inline-block
+			a 
+				line-height: 50px
+				display: block
+				text-decoration: none
+				color: $white
+				padding: 0 20px
+				text-transform: uppercase
+				font-size: 16px
+				&:hover 
+					color: $blue2
+
+.wrapper 
+	font-size: 0
+/* Hero section */
+
+.hero 
+	box-sizing: border-box
+	width: 100%
+	height: calc(100vh - 50px)
+	background: url("https://images.pexels.com/photos/170/apple-laptop-notebook-notes.jpg?w=1260&h=750&auto=compress&cs=tinysrgb")
+	background-position: center
+	background-size: cover
+	background-attachment: fixed
+	padding-top: 35vh
+	.slogan 
+		background-color: $background
+		float: right
+		max-width: 800px
+		padding: 30px
+		background-attachment: fixed
+		h1 
+			color: $white
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 35px
+			span 
+				font-weight: 300
+	
+/* Benefits section */
+
+
+.benefits p 
+	padding: 20px 30px
+	color: $grey
+	margin-top: 20px
+	
+.benefits a 
+	text-decoration: none
+	text-transform: uppercase
+	display: inline-block
+	color: $black
+	i.fa 
+		font-size: 80px
+		color: $white
+		background-color: $dark-grey
+		height: 100px
+		width: 100px
+		padding: 25px
+		+border-radius(20%)
+		margin: 10px
+		text-align: center
+		.fa-laptop
+			position: relative
+			h3 
+				position: absolute
+				top: 170px
+				left: -30px
+				font-size: 40px
+		.fa-search
+			position: relative
+			h3 
+				position: absolute
+				top: 170px
+				font-size: 40px
+		.fa-cogs
+			position: relative
+			h3 
+				position: absolute
+				top: 170px
+				left: -10px
+				font-size: 40px
+
+/* more section */ 
+
+
+.more 
+	p 
+		color: $grey
+		margin: 15px
+	h3 
+		font-size: 45px
+		font-weight: 700
+		text-transform: uppercase
+
+/* gallery */
+
+.gallery 
+	background-position: center
+	background-size: cover
+	height: 200px
+	padding: 0
+	.layer 
+		height: 200px
+		line-height: 200px
+		text-align: center
+		i.fa 
+			visibility: visible
+			color: $black
+			background-color: $white
+			font-size: 20px
+			padding: 10px
+			+border-radius(5%)
+
+	
+
+.gallery1 
+	@extend .gallery
+	background-image: url(https://static.pexels.com/photos/290470/pexels-photo-290470.jpeg)
+	
+
+
+.gallery2 
+	@extend .gallery
+	background-image: url(https://static.pexels.com/photos/247789/pexels-photo-247789.jpeg)
+	
+
+
+.gallery3 
+	@extend .gallery
+	background-image: url(https://static.pexels.com/photos/271533/pexels-photo-271533.jpeg)
+
+
+
+.gallery4 
+	@extend .gallery
+	background-image: url(https://static.pexels.com/photos/208167/pexels-photo-208167.jpeg)
+
+
+.gallery5 
+	@extend .gallery
+	background-image: url(https://static.pexels.com/photos/209050/pexels-photo-209050.jpeg)
+
+
+.gallery6 
+	@extend .gallery
+	background-image: url(https://static.pexels.com/photos/198708/pexels-photo-198708.jpeg)
+
+
+.gallery7 
+	@extend .gallery
+	background-image: url(https://static.pexels.com/photos/162167/dog-cavalier-king-charles-spaniel-funny-pet-162167.jpeg)
+
+
+.gallery8 
+	@extend .gallery
+	background-image: url(https://static.pexels.com/photos/227651/pexels-photo-227651.jpeg)
+
+
+
+/* Team section */ 
+
+
+.circle 
+	height: 200px
+	width: 200px
+	+border-radius(50%)
+	margin: 30px auto
+	text-align: center
+	position: relative
+	line-height: 200px
+	background-position: center
+	background-size: cover
+	h2 
+		position: absolute
+		top: 130px
+		white-space: nowrap
+		color: $grey
+	h3 
+		+border-radius(50%)
+	
+
+
+.circle1 
+	background-image: url(https://images.pexels.com/photos/50855/pexels-photo-50855.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)
+	h2 
+		left: 0
+
+.circle2 
+	background-image: url(https://static.pexels.com/photos/59554/pexels-photo-59554.jpeg)
+
+.circle3 
+	background-image: url(https://c1.staticflickr.com/3/2936/14387367072_85312c31b3_b.jpg)
+
+.circle4 
+	background-image: url(http://s3.egospodarka.pl/grafika2/wynagrodzenia/Ile-zarabia-sekretarka-116782-900x900.jpg)
+
+
+/* section phone */
+
+.phone  
+	background-image: linear-gradient(grey, lightgrey)
+	.smartphone 
+		background-image: url(https://static.pexels.com/photos/50614/pexels-photo-50614.jpeg)
+		height: 300px
+		background-size: cover
+		background-position: center
+		margin: 100px 0 0 0
+	p
+		color: $white
+		font-size: 16px
+		text-align: left
+	h3 
+		color: $white
+		font-size: 40px
+		text-transform: uppercase
+		margin-top: 80px
+		font-weight: 700
+		text-align: left
+		padding-left: 20px	
+
+.phone .col-m-4, .phone .col-m-8 
+	padding: 0 0 0 20px
+	
+
+.col-m-8 .col-m-4 
+	font-style: italic
+
+/* section numbers */
+
+.numbers 
+	h4
+		font-size: 50px
+		font-weight: 700
+		color: $black
+		font-family: $font1
+		p 
+			margin-top: 20px
+			color: $blue
+			text-transform: uppercase
+			
+.numbers hr 
+	color: $blue
+	background: $blue
+	width: 50%
+	height: 7px
+	margin: 7px auto
+
+
+/* footer */ 
+
+footer 
+	background-color: $dark-grey
+	p
+		color: $grey
+	h3 
+		text-align: left
+		overflow: hidden
+		color: $white
+		text-transform: uppercase
+		&:before
+			background-color: $white
+			content: ""
+			display: inline-block
+			height: 2px
+			position: relative
+			width: 70%
+			top: -6px
+			right: 0.5em
+			margin-left: -70%
+		&:after 
+			background-color: $white
+			content: ""
+			display: inline-block
+			height: 2px
+			position: relative
+			width: 70%
+			top: -6px
+			left: 0.5em
+			margin-right: -30%
+	h4
+		text-transform: uppercase
+		color: $white
+
+footer 
+	.col-m-5
+		padding: 20px 20px 60px 20px
+	.col-m-4 
+		padding: 20px 20px 60px 20px
+
+footer .col-m-3
+	padding: 20px 20px 60px 20px
+	.col-m-8, .col-m-4
+		padding: 0
+		
+footer i.fa 
+	color: $white
+	background-color: $blue
+	padding: 10px
+	font-size: 20px
+	margin: 10px 5px 0 0
+
+
+/* copyrights section */ 
+
+.copyrights 
+	background-color: $grey2
+	.container 
+		margin: 0 auto
+		padding: 20px
+		h6 
+			color: $white
+			font-size: 15px
+			font-weight: 300
+
+
+/* RWD */
+
+
+@media (max-width: 767px)
+	.col-s-1 
+		width: 8.33%
+	.col-s-2 
+		width: 16.66%
+	.col-s-3 
+		width: 25%
+	.col-s-4 
+		width: 33.33%
+	.col-s-5 
+		width: 41.66%
+	.col-s-6 
+		width: 50%
+	.col-s-7 
+		width: 58.33%
+	.col-s-8 
+		width: 66.66%
+	.col-s-9
+		width: 75%
+	.col-s-10 
+		width: 83.33%
+	.col-s-11 
+		width: 91.66%
+	.col-s-12 	
+		width: 100%
+	header 
+		height: inherit
+		text-align: center
+		nav img 
+			float: none
+		nav ul 
+			float: none
+			li 
+				float: none
+				width: 100%
+				display: block
+				a 
+					&:hover 
+						color: $white
+	.hero 
+		height: inherit
+		.slogan 
+			float: none
+			width: 100%
+			text-align: center
+			padding: 0
+			h1 
+				font-size: 20px
+	.benefits a 
+		display: block
+	.benefits i.fa 
+		font-size: 60px
+		height: 80px
+		width: 80px
+		padding: 15px
+
+	.gallery
+		margin: 5px
+	
+	.circle 
+		max-width: 200px
+		margin: 50px auto
+		h3 
+			color: $blue
+			position: absolute
+			top: 110px
+	.circle1 h3 
+		left: 80px
+
+	.circle2 
+		h3 
+			left: 80px
+		h2 
+			left: 40px
+	
+	.circle3
+		h3 
+			left: 65px
+		h2 
+			left: 40px
+		
+	
+	.circle4 
+		h2 
+			left: 15px
+		h3
+			left: 55px
+	.phone 
+		h3 
+			font-size: 30px
+			padding: 0
+		.col-s-8 
+			padding: 0 20px 0 0
+		.col-m-4 
+			padding: 0
+	.more h3 
+		font-size: 20px
+	.numbers h4 
+		font-size: 25px
+		hr 
+			height: 4px
+	
+	
+@media (min-width: 768px) 
+	.col-m-1 
+		width: 8.33%
+	.col-m-2 
+		width: 16.66%
+	.col-m-3 
+		width: 25%
+	.col-m-4 
+		width: 33.33%
+	.col-m-5 
+		width: 41.66%
+	.col-m-6 
+		width: 50%
+	.col-m-7 
+		width: 58.33%
+	.col-m-8 
+		width: 66.66%
+	.col-m-9 
+		width: 75%
+	.col-m-10
+		width: 83.33%
+	.col-m-11 
+		width: 91.66%
+	.col-m-12 
+		width: 100%
+	.benefits a
+		&:hover i.fa 
+			background-color: $blue
+			transition: 1s
+		&:hover h3 
+			color: $blue
+			transition: 1s
+		
+	.gallery .layer 		
+		i.fa 
+			visibility: hidden
+		&:hover 
+			background-color: rgba(0,0,0, 0.5)
+			i.fa 
+				visibility: visible
+	
+	.circle 
+		h3 
+			visibility: hidden
+			color: $blue
+		&:hover h3 
+			visibility: visible
+	.circle4 h2 
+		left: 30px
+	
+	.circle2 h2 
+		left: 50px
+	
+	.circle3 h2 
+		left: 50px
+
+
+[class*="col-"] 
+	float: left
+	min-height: 1px
+	padding: 0
+	box-sizing: border-box
+
