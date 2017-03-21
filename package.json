@@ -1,0 +1,26 @@
+{
+  "name": "kodilla-grunt",
+  "version": "1.0.0",
+  "description": "example grunt project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magdaliee/grunt.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Magdalena Lamek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magdaliee/grunt/issues"
+  },
+  "homepage": "https://github.com/magdaliee/grunt#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-sass": "^2.0.0"
+  }
+}
